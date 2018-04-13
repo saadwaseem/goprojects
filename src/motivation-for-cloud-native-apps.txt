@@ -1,0 +1,29 @@
+HyperScale - Traffic Data Features
+Antifragility - Clound apps dont break as a whole 
+continous delivery and devops 
+Opex Savings - automation and utilizations 
+3 key principles associated with cloud native applications 
+1- Build and compose as microservice
+2- Packaged and distributed in containers
+3- Dynamically executed in the cloud 
+
+Challenges and Design Principles 
+
+Design for performance
+Design for automation 
+Design for resiliency
+Design for elasiticty
+Design for delivery
+Design for dianosibility
+
+Components All along the software lifecycle
+1- Design
+2- Build
+3- Run 
+
+Run has various components called ops component
+see cloud native landscape qaware.de/news/cloudnative
+
+Lets implement a microservice in GoLang
+
+
