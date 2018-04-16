@@ -12,6 +12,7 @@ func main() {
 	http.HandleFunc("/", index)
 	http.HandleFunc("/api/echo", echo)
 	http.HandleFunc("/api/books", api.BooksHandleFunc)
+	http.HandleFunc("/api/books/", api.BookHandleFunc)
 
 	http.ListenAndServe(port(), nil)
 }
@@ -35,3 +36,4 @@ func echo (w http.ResponseWriter, r *http.Request){
 	w.Header().Add("Content-Type", "text/plain")
 	fmt.Fprintf(w, message)
 }
+

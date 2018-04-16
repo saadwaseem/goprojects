@@ -3,7 +3,9 @@
 *.dll
 *.so
 *.dylib
-src/src
+src/src/github.com
+src/src/golang.org
+src/src/pkg
 # Test binary, build with `go test -c`
 *.test
 
