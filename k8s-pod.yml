@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cloud-naitve-go
+  labels:
+    language: go
+    env: test
+spec:
+  containers:
+  -  name: my-go-container
+     image: gomicro:2.0.0
+     ports:
+     -  containerPort: 8080
+        protocol: TCP
+

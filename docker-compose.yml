@@ -1,0 +1,21 @@
+version: '3'
+services: 
+  microservice:
+    # build: .
+    image: gomicro:2.0.0
+    environment:
+    - PORT=9090
+    ports:
+    - "9090:9090"
+    volumes:
+    - /home/admin/goprojects:/go
+  nginx:
+    image: "nginx:latest"
+    ports:
+    - "8080:80"
+    links:
+    - microservice
+
+
+
+    
