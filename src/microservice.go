@@ -1,10 +1,10 @@
 package main
 
 import (
+	"api"
 	"fmt"
 	"net/http"
 	"os"
-	"api"
 )
 
 func main() {
@@ -27,13 +27,12 @@ func port() string {
 	return ":" + port
 }
 
-func index (w http.ResponseWriter, r *http.Request){
+func index(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
 	fmt.Fprintf(w, "Hello Cloud Native Go.")
 }
-func echo (w http.ResponseWriter, r *http.Request){
+func echo(w http.ResponseWriter, r *http.Request) {
 	message := r.URL.Query()["message"][0]
 	w.Header().Add("Content-Type", "text/plain")
 	fmt.Fprintf(w, message)
 }
-
